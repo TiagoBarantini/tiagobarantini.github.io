@@ -1,0 +1,20 @@
+---
+import Card from "./Card/index.astro";
+
+type Props = {
+  title: string;
+  companyName: string;
+  startDate: string;
+  endDate?: string;
+}
+
+const { title, companyName, startDate, endDate } = Astro.props;
+---
+
+<Card colSpan="md:col-span-4" rowSpan="md:row-span-1" title={title} removeOverflow={true}>
+  <p><strong>{companyName}</strong></p>
+  <p>{startDate} { endDate ? `- ${endDate}` : '' }</p>
+  <p>
+    <slot />
+  </p>
+</Card>

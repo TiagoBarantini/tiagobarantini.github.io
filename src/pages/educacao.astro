@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Experience from "../components/Experience.astro";
+import Card from "../components/Card/index.astro";
+---
+
+<Layout
+  title="Tiago Barantini - Educação"
+  description="Especializado em Engenharia de Dados com foco em Apache Spark e SQL Server"
+>
+  <Card
+    colSpan="md:col-span-1"
+    rowSpan="md:row-span-1"
+    title="Voltar"
+    href="/"
+    removeOverflow={true}
+  />
+
+  <Card
+    colSpan="md:col-span-3"
+    rowSpan="md:row-span-1"
+    title="Educação"
+    removeOverflow={true}
+  />
+  <Experience
+    title="Pós graduação em Engenharia de Dados"
+    companyName="PUC Minas"
+    startDate="03/2023"
+    endDate="03/2025"
+  >
+  </Experience>
+
+  <Experience
+    title="Gestão em Tecnologia da Informação"
+    companyName="FATEC Itu Dom Amaury Castanho"
+    startDate="2015"
+    endDate="2017"
+  >
+    <p class="mt-4">
+      <strong>Atividades: </strong>Projetos de desenvolvimento de software e banco de dados, apresentações de trabalhos e estudos de caso.
+    </p>
+  </Experience>
+
+  <Experience
+    title="Bootcamp de Engenharia de Dados"
+    companyName="IGTI"
+    startDate="2021"
+  >
+  </Experience>
+
+  <Experience
+    title="Microsoft Azure Data Fundamentals DP-900"
+    companyName="Ka Solution"
+    startDate="2021"
+  >
+  </Experience>
+
+  <Experience
+    title="Semana do 0 ao Python"
+    companyName="Kenzie Academy Brasil"
+    startDate="2021"
+  >
+  </Experience>
+
+  <Experience
+    title="Master Power BI - De A à Z"
+    companyName="Udemy"
+    startDate="2020"
+  >
+  </Experience>
+
+  <Experience
+    title="Curso de Administração de banco de dados"
+    companyName="Ka Solution"
+    startDate="2020"
+  >
+  </Experience>
+</Layout>

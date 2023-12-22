@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IntroCard from "../components/IntroCard.astro";
+import ContactsCard from "../components/ContactsCard.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Card from "../components/Card/index.astro";
+---
+
+<Layout
+  title="Tiago Barantini"
+  description="Especializado em Engenharia de Dados com foco em Apache Spark e SQL Server"
+>
+    <IntroCard />
+    <AboutMe />
+    <ContactsCard />
+
+    <Card
+      colSpan="md:col-span-2"
+      rowSpan="md:row-span-1"
+      title="Experiências Profissionais"
+      href="/experiencias"
+    >
+      Venha conhecer as minhas experiências profissionais
+    </Card>
+    
+    <Card
+      colSpan="md:col-span-2"
+      rowSpan="md:row-span-1"
+      title="Educação"
+      href="/educacao"
+    >
+      Minhas qualificações profissionais e cursos
+    </Card>
+</Layout>

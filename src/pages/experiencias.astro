@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Experience from "../components/Experience.astro";
+import Card from "../components/Card/index.astro";
+---
+
+<Layout
+  title="Tiago Barantini - Experiências"
+  description="Especializado em Engenharia de Dados com foco em Apache Spark e SQL Server"
+>
+  <Card
+    colSpan="md:col-span-1"
+    rowSpan="md:row-span-1"
+    title="Voltar"
+    href="/"
+    removeOverflow={true}
+  />
+
+  <Card
+    colSpan="md:col-span-3"
+    rowSpan="md:row-span-1"
+    title="Experiências Profissionais"
+    removeOverflow={true}
+  />
+  <Experience
+    title="Analista de banco de dados"
+    companyName="Datapar"
+    startDate="04/2018"
+    endDate="Atualmente"
+  >
+    <p class="mt-4 mb-4">
+      Experiência em modelagem de dados, administração, manutenção/instalações e
+      suporte, tunnings, manutenção de índex e estatísticas, politica de backup,
+      jobs, desenvolvimentos de querys.
+    </p>
+
+    <p class="mb-4">Experiência gerenciamento de gateway do Power BI</p>
+
+    <ul class="mb-4 list-disc list-inside">
+      <li>Tunning</li>
+      <li>Manutenção de índices e estatísticas</li>
+      <li>Replicação</li>
+      <li>Desenvolvimento de querys</li>
+      <li>Instalação/Migração</li>
+      <li>Política de segurança</li>
+      <li>Política de backup</li>
+      <li>Configuração Instância/Database</li>
+      <li>Jobs</li>
+      <li>Integrações</li>
+    </ul>
+
+    <p class="mb-4">
+      <strong>Skills:</strong> Banco de dados
+    </p>
+  </Experience>
+
+  <Experience
+    title="Esgiário Voluntário"
+    companyName="FATEC Itu Dom Amaury Castanho"
+    startDate="08/2017"
+    endDate="10/2017"
+  >
+    <p class="mt-4">
+      Foi desenvolvido um site usando a framework PHP Laravel para a semana de
+      tecnologia da faculdade onde realizei o estágio ajudando no
+      desenvolvimento.
+    </p>
+  </Experience>
+
+  <Experience
+    title="Esgiário"
+    companyName="LJS sistemas"
+    startDate="02/2016"
+    endDate="12/2016"
+  >
+    <p class="mt-4">
+      Trabalho como laboratarista na escola Walter Friedrich, auxiliando os
+      alunos nas aulas de informatica.
+    </p>
+  </Experience>
+</Layout>
